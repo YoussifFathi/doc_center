@@ -1,6 +1,5 @@
 import 'package:doc_center/core/constants/app_colors.dart';
 import 'package:doc_center/core/navigation/routes.dart';
-import 'package:doc_center/features/splash/presentation/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
           primaryColor: AppColors.mainBlue,
           scaffoldBackgroundColor: Colors.white,
         ),
-        initialRoute: Routes.splash,
+        initialRoute: Routes.onboardingScreen,
         onGenerateRoute: AppRouter().getRoute,
       ),
     );

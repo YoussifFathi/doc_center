@@ -1,4 +1,5 @@
 import 'package:doc_center/core/navigation/routes.dart';
+import 'package:doc_center/features/onboarding/presentation/views/onboarding_screen.dart';
 import 'package:doc_center/features/splash/presentation/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -7,8 +8,8 @@ class AppRouter {
     switch (settings.name) {
       case Routes.splash:
         return _buildRoute(settings, const SplashScreen());
-      // case Routes.onboardingScreen:
-      //   return _buildRoute(settings, const OnBoardingScreen());
+      case Routes.onboardingScreen:
+        return _buildRoute(settings, const OnboardingScreen());
       // case Routes.homeScreen:
       //   return _buildRoute(settings, const HomeScreen());
       default:
