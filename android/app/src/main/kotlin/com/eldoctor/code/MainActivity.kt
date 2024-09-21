@@ -1,4 +1,4 @@
-package com.eldoctor.code
+package com.doc_center.app
 
 import io.flutter.embedding.android.FlutterActivity
 
