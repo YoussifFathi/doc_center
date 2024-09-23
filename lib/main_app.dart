@@ -1,9 +1,10 @@
 import 'package:doc_center/core/constants/app_colors.dart';
+import 'package:doc_center/core/navigation/app_pages.dart';
 import 'package:doc_center/core/navigation/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
-import 'core/navigation/app_router.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       minTextAdapt: true,
-      child: MaterialApp(
+      child: GetMaterialApp(
         title: "Doc Center",
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
         ),
         initialRoute: Routes.onboardingScreen,
-        onGenerateRoute: AppRouter().getRoute,
+        getPages: AppPages.pages,
       ),
     );
   }
