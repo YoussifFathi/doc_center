@@ -1,10 +1,12 @@
 import 'package:doc_center/core/constants/app_colors.dart';
 import 'package:doc_center/core/constants/app_text_styles.dart';
+import 'package:doc_center/core/navigation/routes.dart';
 import 'package:doc_center/core/widgets/primary_button.dart';
 import 'package:doc_center/features/onboarding/presentation/views/widgets/logo_and_doc_center.dart';
 import 'package:doc_center/features/onboarding/presentation/views/widgets/stack_doc_pic_and_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 class OnboardingBody extends StatelessWidget {
   const OnboardingBody({super.key});
@@ -33,7 +35,7 @@ class OnboardingBody extends StatelessWidget {
               PrimaryButton(
                 title: "Get Started",
                 onTap: () {
-                  print("go to next screen");
+                  Get.toNamed(Routes.loginScreen);
                 },
               ),
             ],
