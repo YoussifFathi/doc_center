@@ -1,4 +1,5 @@
 import 'package:doc_center/core/navigation/routes.dart';
+import 'package:doc_center/features/login/presentation/controllers/login_bindings.dart';
 import 'package:doc_center/features/login/presentation/views/login_screen.dart';
 import 'package:doc_center/features/onboarding/presentation/views/onboarding_screen.dart';
 import 'package:doc_center/features/splash/presentation/views/splash_screen.dart';
@@ -17,6 +18,7 @@ abstract class AppPages {
     GetPage(
       name: Routes.loginScreen,
       page: () => const LoginScreen(),
+      binding: LoginBindings(),
     ),
   ];
 }

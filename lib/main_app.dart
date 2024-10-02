@@ -1,3 +1,4 @@
+import 'package:doc_center/core/bindings/init_bindings.dart';
 import 'package:doc_center/core/constants/app_colors.dart';
 import 'package:doc_center/core/navigation/app_pages.dart';
 import 'package:doc_center/core/navigation/routes.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: Routes.onboardingScreen,
         getPages: AppPages.pages,
+        initialBinding: InitBindings(),
       ),
     );
   }
